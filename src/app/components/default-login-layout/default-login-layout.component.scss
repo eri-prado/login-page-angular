@@ -2,10 +2,8 @@
 
 
 main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr .6fr;
     height: 100dvh;
 
     section {
@@ -21,6 +19,16 @@ main {
 
         flex-grow: 1;
         background-color: $gray-bg;
+
+        h1 {
+          font-size: 2rem;
+        }
+
+
+        img {
+          margin-top: 1rem;
+          max-width: 50%;
+        }
     }
 
     .form-section {

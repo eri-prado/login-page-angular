@@ -1,22 +1,23 @@
 <main>
+  <section class="main-section">
+    <h1>Seu espaço seguro.</h1>
+    <img src="assets/svg/image.svg" />
+  </section>
   <section class="form-section">
     <img src="assets/svg/logo.svg" />
     <h2>{{ title }}</h2>
     <ng-content></ng-content>
     <div class="btn-wrapper">
-      <button class="btn-primary" (click)="submit()" [disabled]="disablePrimaryBtn">
+      <button class="btn-primary" (click)="submit()">
         {{ primaryBtnText }}
       </button>
       <div class="divider">
         <div></div>
-        <span>or</span>
+        <span>ou</span>
         <div></div>
       </div>
       <button class="btn-secondary" (click)="navigate()">{{ secondaryBtnText }}</button>
     </div>
   </section>
-  <section class="main-section">
-    <h1>You Should, MoveIt!</h1>
-    <img src="assets/svg/image.svg" />
-  </section>
+
 </main>

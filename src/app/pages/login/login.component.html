@@ -1,7 +1,7 @@
 <app-default-login-layout
-  title="Login into your account"
-  primaryBtnText="Login Now"
-  secondaryBtnText="Signup Now"
+  title="Faça login em sua conta"
+  primaryBtnText="Login"
+  secondaryBtnText="Inscreva-se"
   (submit)="submit()"
   (navigate)="navigate()"
   [disablePrimaryBtn]="!loginForm.valid"
@@ -12,14 +12,17 @@
       inputName="email"
       type="email"
       label="Email"
-      placeholder="eri.prado@hotmail.com"
-    />
+      placeholder=""
+    >
+      <span class="material-symbols-outlined"> mail </span>
+    </app-primary-input>
     <app-primary-input
-      formControlName="email"
+      formControlName="password"
       inputName="password"
       type="password"
-      label="Your Password"
-    />
-    <span>Forgot password?</span>
+      label="Sua Senha"
+    >
+      <span class="material-symbols-outlined"> lock </span>
+    </app-primary-input>
   </form>
 </app-default-login-layout>
